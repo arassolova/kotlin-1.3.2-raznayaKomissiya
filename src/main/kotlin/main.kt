@@ -1,3 +1,5 @@
+package ru.netology
+
 fun main() {
     val cardType = "Vk Pay"
     val transfersSum = 0
@@ -14,9 +16,12 @@ fun main() {
 
     val commission4 = calculateCommission("Мир", 3_000)
     println("Commission: $commission4 kopecks")
+
+    val commission5 = calculateCommission(moneyAmount = 1000)
+    println("Commission: $commission5 kopecks")
 }
 
-private fun calculateCommission(
+fun calculateCommission(
     cardType: String = "VK Pay",
     moneyAmount: Int,
     transfersSum: Int = 0
