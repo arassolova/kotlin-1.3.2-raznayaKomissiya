@@ -21,7 +21,7 @@ fun main() {
     println("Commission: $commission5 kopecks")
 }
 
-fun calculateCommission(
+fu calculateCommission(
     cardType: String = "VK Pay",
     moneyAmount: Int,
     transfersSum: Int = 0
